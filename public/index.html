@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Architecture - Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .endpoint {
+            background: #f5f5f5;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .endpoint-method {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        
+        .get {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .post {
+            background: #2196F3;
+            color: white;
+        }
+        
+        .endpoint-url {
+            color: #333;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            word-break: break-all;
+        }
+        
+        .info-box {
+            background: #e3f2fd;
+            border: 1px solid #667eea;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .github-link {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .github-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .github-link a:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Software Architecture</h1>
+        <p class="subtitle">Node.js Express API with File-Based Persistence</p>
+        
+        <div class="info-box">
+            <strong> Server is running on port 5000</strong><br>
+            All endpoints are available and functional.
+        </div>
+        
+        <div class="section">
+            <h2> Available Endpoints</h2>
+            
+            <div class="endpoint">
+                <span class="endpoint-method post">POST</span>
+                <span class="endpoint-url">/v1/api/users</span>
+                <p style="margin-top: 5px; color: #666; font-size: 13px;">Create a new user</p>
+            </div>
+            
+            <div class="endpoint">
+                <span class="endpoint-method get">GET</span>
+                <span class="endpoint-url">/v1/api/users/:id</span>
+                <p style="margin-top: 5px; color: #666; font-size: 13px;">Get user by ID</p>
+            </div>
+            
+            <div class="endpoint">
+                <span class="endpoint-method post">POST</span>
+                <span class="endpoint-url">/v1/api/auth/login</span>
+                <p style="margin-top: 5px; color: #666; font-size: 13px;">User login (authentication)</p>
+            </div>
+            
+            <div class="endpoint">
+                <span class="endpoint-method post">POST</span>
+                <span class="endpoint-url">/v1/api/transactions</span>
+                <p style="margin-top: 5px; color: #666; font-size: 13px;">Create a transaction</p>
+            </div>
+            
+            <div class="endpoint">
+                <span class="endpoint-method get">GET</span>
+                <span class="endpoint-url">/v1/api/transactions/user/:userId</span>
+                <p style="margin-top: 5px; color: #666; font-size: 13px;">Get user's transactions</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2> Features</h2>
+            <ul style="margin-left: 20px; color: #666; line-height: 1.8;">
+                <li>✓ User management with secure password hashing</li>
+                <li>✓ Transaction tracking and storage</li>
+                <li>✓ File-based persistence (JSON storage)</li>
+                <li>✓ CORS enabled for cross-origin requests</li>
+                <li>✓ RESTful API architecture</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2> Tech Stack</h2>
+            <ul style="margin-left: 20px; color: #666; line-height: 1.8;">
+                <li>Node.js & Express.js</li>
+                <li>bcryptjs (password hashing)</li>
+                <li>UUID (unique identifiers)</li>
+                <li>CORS middleware</li>
+                <li>Cookie Parser</li>
+            </ul>
+        </div>
+        
+        <div class="github-link">
+            <a href="https://github.com/alaye237/software-architecture" target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
