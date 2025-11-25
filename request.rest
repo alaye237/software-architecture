@@ -1,0 +1,46 @@
+POST http://localhost:5000/v1/api/users
+Content-Type: application/json
+
+{
+    "firstname":"bless",
+    "lastname":"his",
+    "email":"b@gmail.com",
+    "DOB":"2022-12-12",
+    "password":"bless123"
+
+}
+###
+POST http://localhost:5000/v1/api/auth/login
+Content-Type: application/json
+
+{
+    
+    "email":"b@gmail.com",
+    "password":"bless123"
+
+}
+###
+POST http://localhost:5000/v1/api/transactions
+Content-Type: application/json
+
+{
+    "card_id": "a94c1a7c-3f2d-4871-b0e6-541e2f92f7d2", 
+    "user_id": "e83f60f6-d76f-4091-a67e-6e8a4d4a8d4a",
+    "amount": 49.99,
+    "status": "complete",
+    "cardholder_name": "JANE DOE"
+}
+### 
+POST http://localhost:5000/v1/api/transactions
+Content-Type: application/json
+
+{
+    "card_id": "a94c1a7c-3f2d-4871-b0e6-541e2f92f7d2", 
+    "user_id": "e83f60f6-d76f-4091-a67e-6e8a4d4a8d4a",
+    "amount": 90.00, 
+    "status": "complete",
+    "cardholder_name": "JOHN DOE"
+}
+
+###
+GET http://localhost:5000/v1/api/localhost:5000/v1/api/transactions/user/e83f60f6-d76f-4091-a67e-6e8a4d4a8d4a

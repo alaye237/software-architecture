@@ -1,0 +1,11 @@
+[
+  {
+    "id": "6ce3f187-ea21-440c-9b45-227d53c1e541",
+    "firstname": "Test",
+    "lastname": "User",
+    "email": "test1@example.com",
+    "DOB": null,
+    "password": "$2b$10$DhZIbC2kGmvLiAekQ9ZzkuiUfDU0uY6LQaR3aEqrz77jAn6IbEXyu",
+    "created_at": "2025-11-25T00:59:49.517Z"
+  }
+]
